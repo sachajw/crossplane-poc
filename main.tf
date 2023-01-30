@@ -90,7 +90,7 @@ provider "helm" {
 # GitHub https://github.com/crossplane/crossplane
 resource "helm_release" "crossplane" {
   name       = "crossplane"
-  chart      = "stable"
+  chart      = "crossplane-stable"
   repository = "https://github.com/crossplane/crossplane"
   depends_on = [kind_cluster.ortelius]
   #timeout          = 600
