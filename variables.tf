@@ -16,6 +16,12 @@ variable "ingress_nginx_namespace" {
   default     = "ingress-nginx"
 }
 
+variable "crossplane_namespace" {
+  type        = string
+  description = "The Crossplane namespace"
+  default     = "crossplane"
+}
+
 variable "ortelius_namespace" {
   type        = string
   description = "The Ortelius namespace"
