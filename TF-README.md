@@ -20,16 +20,13 @@
 
 ## Modules
 
-| Name | Source | Version |
-|------|--------|---------|
-| <a name="module_crossplane"></a> [crossplane](#module\_crossplane) | nlamirault/crossplane/aws | 0.2.0 |
+No modules.
 
 ## Resources
 
 | Name | Type |
 |------|------|
 | [helm_release.crossplane](https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release) | resource |
-| [helm_release.ortelius](https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release) | resource |
 | [kind_cluster.ortelius](https://registry.terraform.io/providers/tehcyx/kind/latest/docs/resources/cluster) | resource |
 
 ## Inputs
@@ -37,7 +34,7 @@
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_kind_cluster_config_path"></a> [kind\_cluster\_config\_path](#input\_kind\_cluster\_config\_path) | Cluster's kubeconfig location | `string` | `"~/.kube/config"` | no |
-| <a name="input_ortelius_namespace"></a> [ortelius\_namespace](#input\_ortelius\_namespace) | The Ortelius namespace | `string` | `"ortelius"` | no |
+| <a name="input_kind_cluster_name"></a> [kind\_cluster\_name](#input\_kind\_cluster\_name) | The name of the cluster | `string` | `"ortelius"` | no |
 
 ## Outputs
 

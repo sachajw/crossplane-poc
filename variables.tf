@@ -1,3 +1,9 @@
+variable "kind_cluster_name" {
+  type        = string
+  description = "The name of the cluster"
+  default     = "ortelius"
+}
+
 variable "kind_cluster_config_path" {
   type        = string
   description = "Cluster's kubeconfig location"
@@ -10,8 +16,8 @@ variable "kind_cluster_config_path" {
 #  default     = "ingress-nginx"
 #}
 
-variable "ortelius_namespace" {
-  type        = string
-  description = "The Ortelius namespace"
-  default     = "ortelius"
-}
+#variable "ortelius_namespace" {
+#  type        = string
+#  description = "The Ortelius namespace"
+#  default     = "ortelius"
+#}
