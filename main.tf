@@ -89,12 +89,10 @@ provider "helm" {
 # crossplane https://docs.crossplane.io/v1.10/
 # GitHub https://github.com/crossplane/crossplane
 resource "helm_release" "crossplane" {
-  name             = "crossplane"
-  chart            = "crossplane"
-  repository       = "https://github.com/crossplane/crossplane"
-  namespace        = var.crossplane_namespace
-  create_namespace = true
-  depends_on       = [kind_cluster.ortelius]
+  name       = "crossplane"
+  chart      = "crossplane"
+  repository = "https://github.com/crossplane/crossplane"
+  depends_on = [kind_cluster.ortelius]
   #timeout          = 600
 }
 
